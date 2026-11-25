@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Certificate | CertVerify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container">
+      <a href="/" class="brand"><span class="logo">🎓</span> CertVerify</a>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/verify.html" class="active">Verify Certificate</a></li>
+        <li><a href="/login.html">Admin Login</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <div class="container">
+      <div class="panel-card">
+        <h1>🔍 Verify a Certificate</h1>
+        <p class="sub">Enter the Certificate ID printed on the certificate, or scan its QR code.</p>
+        <form id="verifyForm" class="inline-form" autocomplete="off">
+          <input type="text" id="certId" placeholder="e.g. CERT-2026-A3F9C1" maxlength="40" required />
+          <button type="submit" class="btn btn-primary" id="verifyBtn">Verify</button>
+        </form>
+
+        <div class="scan-box">
+          <p class="or">or verify with a QR code</p>
+          <div class="scan-actions">
+            <label class="btn btn-light" for="qrFile">📁 Upload QR Image</label>
+            <input type="file" id="qrFile" accept="image/*" hidden />
+            <button type="button" class="btn btn-light" id="camBtn">📷 Scan with Camera</button>
+          </div>
+          <video id="camVideo" playsinline muted hidden></video>
+          <canvas id="scanCanvas" hidden></canvas>
+        </div>
+        <div id="result" class="result" aria-live="polite"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Digital Certificate Verification System</div>
+  </footer>
+  <script src="/js/main.js"></script>
+  <script src="/js/jsQR.js"></script>
+  <script src="/js/verify.js"></script>
+</body>
+
+</html>

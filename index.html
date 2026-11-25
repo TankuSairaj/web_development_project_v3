@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Certificate Verification System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav"><div class="container">
+    <a href="/" class="brand"><span class="logo">🎓</span> CertVerify</a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/verify.html">Verify Certificate</a></li>
+      <li><a href="/login.html">Admin Login</a></li>
+      <li><a href="/about.html">About</a></li>
+    </ul>
+  </div></header>
+
+  <section class="hero"><div class="container">
+    <div>
+      <h1>Digital Certificate Verification System</h1>
+      <p>Issue tamper-proof digital certificates and let anyone verify them instantly with a unique Certificate ID or QR code. Fast, secure and always available.</p>
+      <div class="cta">
+        <a href="/verify.html" class="btn btn-white btn-lg">🔍 Verify Certificate</a>
+        <a href="/login.html" class="btn btn-ghost btn-lg">Admin Login</a>
+      </div>
+    </div>
+    <div class="cert-mock">
+      <span class="tag">✔ Verified</span>
+      <h3>Certificate of Completion</h3>
+      <div class="line"></div><div class="line s"></div><div class="line"></div>
+      <div class="qr"></div>
+    </div>
+  </div></section>
+
+  <section><div class="container">
+    <div class="section-title reveal"><h2>Why CertVerify?</h2><p>Trusted verification for students, employers and institutions.</p></div>
+    <div class="grid3">
+      <div class="card reveal"><div class="ico">⚡</div><h3>Instant Verification</h3><p>Enter a Certificate ID and get the result in seconds.</p></div>
+      <div class="card reveal"><div class="ico">📱</div><h3>QR Code Support</h3><p>Every certificate has a unique QR code that opens its verification page.</p></div>
+      <div class="card reveal"><div class="ico">🛡️</div><h3>Secure Admin Panel</h3><p>Hashed passwords, protected routes and revocation control.</p></div>
+      <div class="card reveal"><div class="ico">🚫</div><h3>Revocation</h3><p>Revoked certificates are clearly flagged as invalid.</p></div>
+    </div>
+  </div></section>
+
+  <section class="white-band"><div class="container">
+    <div class="section-title reveal"><h2>How It Works</h2></div>
+    <div class="grid3">
+      <div class="card reveal"><div class="step-num">1</div><h3>Institution issues</h3><p>An admin adds the student's details and a unique ID plus QR code are generated.</p></div>
+      <div class="card reveal"><div class="step-num">2</div><h3>Student shares</h3><p>The certificate carries its ID and QR code for anyone to check.</p></div>
+      <div class="card reveal"><div class="step-num">3</div><h3>Anyone verifies</h3><p>Employers type the ID or scan the QR to see the verified details.</p></div>
+    </div>
+  </div></section>
+
+  <footer><div class="container">© <span id="year"></span> Digital Certificate Verification System</div></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

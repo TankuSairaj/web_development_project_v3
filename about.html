@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | CertVerify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav"><div class="container">
+    <a href="/" class="brand"><span class="logo">🎓</span> CertVerify</a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/verify.html">Verify Certificate</a></li>
+      <li><a href="/login.html">Admin Login</a></li>
+      <li><a href="/about.html" class="active">About</a></li>
+    </ul>
+  </div></header>
+
+  <main class="page-wrap"><div class="container">
+    <div class="section-title"><h2>About the Project</h2>
+      <p>A BTech project that fights certificate forgery with instant online verification.</p></div>
+    <div class="grid3">
+      <div class="card"><div class="ico">🎯</div><h3>Objective</h3>
+        <p>Let institutions issue digital certificates and let anyone verify them using a unique ID or QR code.</p></div>
+      <div class="card"><div class="ico">🧰</div><h3>Technology</h3>
+        <ul class="about-list"><li>HTML5, CSS3, JavaScript</li><li>Node.js and Express.js</li><li>MongoDB with Mongoose</li><li>QR code generation</li></ul></div>
+      <div class="card"><div class="ico">🔒</div><h3>Security</h3>
+        <ul class="about-list"><li>bcrypt password hashing</li><li>JWT in HTTP-only cookies</li><li>Protected admin routes</li><li>Rate limiting and secure headers</li></ul></div>
+    </div>
+  </div></main>
+
+  <footer><div class="container">© <span id="year"></span> Digital Certificate Verification System</div></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

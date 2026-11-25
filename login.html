@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login | CertVerify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav"><div class="container">
+    <a href="/" class="brand"><span class="logo">🎓</span> CertVerify</a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/verify.html">Verify Certificate</a></li>
+      <li><a href="/login.html" class="active">Admin Login</a></li>
+      <li><a href="/about.html">About</a></li>
+    </ul>
+  </div></header>
+
+  <main class="page-wrap"><div class="container">
+    <div class="panel-card narrow">
+      <h1>🔐 Admin Login</h1>
+      <p class="sub">Authorised institution staff only.</p>
+      <form id="loginForm">
+        <div class="field"><label for="username">Username</label>
+          <input type="text" id="username" autocomplete="username" required /></div>
+        <div class="field"><label for="password">Password</label>
+          <input type="password" id="password" autocomplete="current-password" required /></div>
+        <p class="error-text" id="loginError"></p>
+        <button class="btn btn-primary" style="width:100%" id="loginBtn">Login</button>
+      </form>
+    </div>
+  </div></main>
+
+  <footer><div class="container">© <span id="year"></span> Digital Certificate Verification System</div></footer>
+  <script src="/js/main.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+</html>
